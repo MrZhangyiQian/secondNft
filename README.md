@@ -2,14 +2,12 @@
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+// 部署合约
+Pull 代码 终端命令
+1、安装依赖
+npm install --save-dev @openzeppelin/contracts-upgradeable @openzeppelin/hardhat-upgrades @nomicfoundation/hardhat-toolbox @chainlink/contracts dotenv
+ npm install @chainlink/contracts@0.8 --save-dev
+2、增加配置文件.env
 ```
   test result:
   PS D:\web3\secondNft> npx hardhat test test/Auction.test.js
