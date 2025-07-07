@@ -41,7 +41,14 @@ module.exports = {
     apiKey: ETHERSCAN_API_KEY,
   },
   mocha: {
-    timeout: 500000,
+    reporter: 'mochawesome',
+    reporterOptions: {
+      reportDir: 'test-reports', // 报告生成目录
+      overwrite: false,          // 是否覆盖之前的报告
+      html: true,                // 生成HTML报告
+      json: true,                // 生成JSON报告
+      timestamp: 'yyyy-mm-dd_HH-MM-ss' // 时间戳，用于避免覆盖
+    }
   },
   sourcify: {
     enabled: false
