@@ -27,7 +27,7 @@ async function main() {
   console.log("AuctionFactory deployed to:", factory.target);
 
   // 4. 使用工厂创建拍卖代理合约（使用升级插件）
-  const SEPOLIA_FEED = "0x694AA1769357215DE4FAC081bf1f309aDC325306";
+  const SEPOLIA_FEED = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266";
   const duration = 3600;
 
   console.log("通过工厂创建拍卖...");
